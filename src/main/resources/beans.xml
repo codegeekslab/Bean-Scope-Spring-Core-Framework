@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="book" class="com.codegeekslab.items.Book">
+		<property name="name" value="Rich dad Poor dad" />
+		<property name="price" value="14" />
+		<property name="author" value="robert kiyosaki" />
+	</bean>
+	<bean id="chips" class="com.codegeekslab.items.Chips">
+		<property name="name" value="Lays" />
+		<property name="price" value="2" />
+		<property name="flavour" value="mexican" />
+
+	</bean>
+	<bean id="chips2" class="com.codegeekslab.items.Chips">
+		<property name="name" value="uncle chips" />
+		<property name="price" value="2" />
+		<property name="flavour" value="indian" />
+
+	</bean>
+	<bean id="shoppingCart" class="com.codegeekslab.cart.ShoppingCart" />
+	<!-- comment above and uncomment below for prototype scope -->
+	<!-- <bean id="shoppingCart" class="com.codegeekslab.cart.ShoppingCart"
+		scope="prototype" /> -->
+</beans>
